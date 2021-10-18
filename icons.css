@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right top, #031837, #03193a, #04193c, #051a3f, #061a41);
+    height: 100vh;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    list-style-type: none;
+}
+ul li {
+    margin: 0px 15px;
+}
+ ul li a {
+     position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    line-height: 63px;
+    background: #333;
+    color: #666;
+    font-size: 30px;
+    transition: 0.9s;
+    text-align: center;
+}
+
+
+
+
+ul li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: rgb(221, 18, 170);
+    transition: 0.5s;
+    z-index: -1;
+    transform: scale(0.9);
+}
+ul li:nth-child(2) a::before{
+    background-color: rgb(221, 59, 18);
+}
+ul li:nth-child(3) a::before{
+    background-color: rgb(18, 157, 221);
+}
+ul li:nth-child(4) a::before{
+    background-color: rgb(218, 221, 18);
+}
+
+
+
+
+
+
+
+
+ul li:nth-child(1) a:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgb(221, 18, 170);
+}
+ul li:nth-child(2) a:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgb(221, 59, 18);
+}
+ul li:nth-child(3) a:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgb(18, 157, 221);
+}
+ul li:nth-child(4) a:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgb(218, 221, 18);
+}
+
+
+
+
+
+
+ul li:nth-child(1) a:hover {
+    color: rgb(221, 18, 170);
+    box-shadow: 0px 0px 5px rgb(221, 18, 170);
+    text-shadow:0px 0px 5px rgb(221, 18, 170);
+}
+ul li:nth-child(2) a:hover {
+    color: rgb(221, 59, 18);
+    box-shadow: 0px 0px 5px rgb(221, 59, 18);
+    text-shadow:0px 0px 5px rgb(221, 59, 18);
+}
+ul li:nth-child(3) a:hover {
+    color: rgb(18, 157, 221);
+    box-shadow: 0px 0px 5px rgb(18, 157, 221);
+    text-shadow:0px 0px 5px rgb(18, 157, 221);
+}
+ul li:nth-child(4) a:hover {
+    color: rgb(218, 221, 18);
+    box-shadow: 0px 0px 5px rgb(218, 221, 18);
+    text-shadow:0px 0px 5px rgb(218, 221, 18);
+}
